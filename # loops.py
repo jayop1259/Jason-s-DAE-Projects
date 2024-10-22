@@ -1,5 +1,4 @@
 # loops
-
 print('hello world')
 
 
@@ -18,5 +17,16 @@ while cond >= 5:
      print ('hello world')
      cond = cond + 1
      print (cond)
-     
+
+
+     # functions
+
+     # block of reuseable code 
+
+
+def myfunction (text):
+    print(text) 
  
+
+myfunction('there are cats running around') # calling the function
+myfunction('there is a cat on 84th elm street') # 
