@@ -24,18 +24,29 @@ def get_user_hobbies():
 
 # Main program logic
 def main():
-    # Show welcome message
-    print("Welcome to the program!")
-    
-    # Get user details
-    user_name = get_user_name()
-    user_age = get_user_age()
-    user_hobbies = get_user_hobbies()
-    
-    # Thank you message
-    print(f"Thank you, {user_name}! Here is a summary of your information:")
-    print(f"Age: {user_age}")
-    print(f"Hobbies: {', '.join(user_hobbies)}")
+
+    playAgain = True
+
+    while playAgain:
+
+        # Show welcome message
+        print("Welcome to the program!")
+        
+        # Get user details
+        user_name = get_user_name()
+        user_age = get_user_age()
+        user_hobbies = get_user_hobbies()
+        
+        # Thank you message
+        print(f"Thank you, {user_name}! Here is a summary of your information:")
+        print(f"Age: {user_age}")
+        print(f"Hobbies: {', '.join(user_hobbies)}")
+
+        userAnswer = input( "Do you want to play again: Type yes or no:" )
+
+        if userAnswer[0].lower() == "n":
+            playAgain = False
+
     print("End of program.")
 
 # Run the main program
