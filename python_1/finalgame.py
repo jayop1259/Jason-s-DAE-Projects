@@ -24,7 +24,7 @@ def get_user_hobbies():
 
 # Main program logic
 def main():
-
+    playerInformation = []
     playAgain = True
 
     while playAgain:
@@ -35,6 +35,10 @@ def main():
         # Get user details
         user_name = get_user_name()
         user_age = get_user_age()
+
+        playerInformation.append( user_name )
+        playerInformation.append( user_age )
+
         user_hobbies = get_user_hobbies()
         
         # Thank you message
@@ -48,6 +52,9 @@ def main():
             playAgain = False
 
     print("End of program.")
+
+    for detail in playerInformation:
+        print( detail )
 
 # Run the main program
 main()
