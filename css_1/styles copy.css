@@ -1,7 +1,20 @@
-/* The start of using CSS. Also I can't change my file names to lowercase. Sorry */
+/* The start of using CSS. */
 
 h1{
-    color:darkgreen
+    color:darkred;
+    margin: 0px 0px 0px 50px; /* Top Right Bottom Left */
+    
+
 }
 
-    
+p{
+    width:75%;
+    background-color: lightblue;
+    color:#817979;
+    text-align: center;
+    line-height: 1.6;
+    padding:  5px 10px 5px 10px; /* Top Right Bottom Left */
+    margin:  0px 0px 0px 50px; /* Top Right Bottom Left */
+    font-size: 20px;
+    font-family: "IM Fell DW Pica", serif;
+}
