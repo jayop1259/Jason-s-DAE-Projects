@@ -1,12 +1,15 @@
 /* The start of using CSS. */
 
+
+/* 1. h1 - Main heading style */
 h1{
     color:darkred;
-    margin: 0px 0px 0px 50px; /* Top Right Bottom Left */
+    margin: 5px 0px 10px 50px; /* Top Right Bottom Left */
     
 
 }
 
+/* 2. p - Paragraph style */
 p{
     width:75%;
     background-color: lightblue;
@@ -17,4 +20,39 @@ p{
     margin:  0px 0px 0px 50px; /* Top Right Bottom Left */
     font-size: 20px;
     font-family: "IM Fell DW Pica", serif;
+}
+
+/* 3. div - For general container styling */
+div{ 
+    padding: 20px;
+    color: #892929;
+    margin: 10px 0px;
+}
+   
+
+/* 4. ul - Unordered list style */
+ul{
+    list-style-type: square; 
+    margin-left: 50px;
+}
+
+/* 5. li - List item style */
+li{
+    color: #333;
+    font-size: 18px;
+}
+
+/* 6. a - Link style */
+a{
+    color:rgb(37, 37, 226);
+    text-decoration: none;
+    
+}
+
+/* 7. img - Image style */
+img{
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px
 }
