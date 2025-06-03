@@ -13,7 +13,7 @@ h1{
 p{
     width:75%;
     background-color: lightblue;
-    color:#817979;
+    color:#666060;
     text-align: center;
     line-height: 1.6;
     padding:  5px 10px 5px 10px; /* Top Right Bottom Left */
@@ -31,9 +31,10 @@ div{
    
 
 /* 4. ul - Unordered list style */
-ul{
-    list-style-type: square; 
-    margin-left: 50px;
+ul, ol { 
+    list-style-type: insdie; 
+    margin-left: 0px;
+    padding-left: 8;
 }
 
 /* 5. li - List item style */
@@ -56,3 +57,140 @@ img{
     margin-top: 20px;
     margin-bottom: 10px
 }
+
+/* 8. map container */
+.map-container {
+    position: relative; 
+    width: 100%;
+    padding-bottom: 56.25%; /*16:9 ration */
+    height: 0;
+    overflow: hidden;
+}
+
+/* .map container iframe* */
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 3;
+    right: 2;
+    width: 3%;
+    height: 3%;
+    bottom: 3%;
+}
+/* Make the nav items appear in a row */
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* center them horizontally */
+    list-style: none; /* remove bullets */
+    padding: 0;
+    margin: 20px 0;
+    gap: 30px; /* spacing between links */
+}
+
+/* Style for the links */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'IM Fell DW Pica', serif;
+    transition: color 0.3s ease;
+}
+
+/* Optional hover effect */
+.nav-link:hover {
+    color: #007acc; 
+}
+
+/* Match nav link size with <h3> headings */
+.nav-link {
+    font-size: 1.25rem; /* about 20px */
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    font-family: 'IM Fell DW Pica', serif;
+    transition: color 0.3s ease;
+}
+
+/* Optional: unify <h3> size if it's different */
+h3 {
+    font-size: 1.25rem;
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+h2, h3, h4, h5, h6 {
+    color: black;
+    font-family: 'IM Fell DW Pica', serif; /* keep your font */
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.25rem; /* same size as "Where They Live" heading */
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Optional: change color on hover */
+.nav-link:hover {
+    color: #007acc; /* or any color you want */
+}
+
+.container {
+    max-width: 900px;       /* limits the width */
+    margin: 0 auto;         /* centers the container horizontally */
+    padding: 0 20px;        /* small padding so text doesn't touch edges */
+    text-align: left;       /* keeps text left-aligned inside container */
+  }
+  
+  /* Ensures the main content and footer are properly separated */
+main {
+    margin-bottom: 50px; /* Adds space between the main content and the footer */
+  }
+  
+  /* Optional: Add more style to the footer for separation */
+  footer {
+    background-color: #f1f1f1;  /* Add a subtle background to the footer */
+    padding: 20px;              /* Add padding around the footer */
+    text-align: center;         /* Center-align the footer content */
+    margin-top: 30px;           /* Adds space above the footer */
+    border-top: 2px solid #ccc; /* Optional: Adds a line to separate footer visually */
+  }
+  
+  header {
+    background: linear-gradient(to right, #8e4330, #FEB47B); /* A soft gradient */
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .nav-link:hover {
+    color: #653a2f; /* Highlight on hover */
+    transition: color 0.3s ease;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    color: #333;
+  }
