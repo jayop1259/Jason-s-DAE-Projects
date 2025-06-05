@@ -194,3 +194,7 @@ main {
   .card h3 {
     color: #333;
   }
+
+  .spaced-image {
+    margin-right: 20px;
+  }
